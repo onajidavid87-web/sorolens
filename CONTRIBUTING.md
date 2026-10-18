@@ -57,10 +57,10 @@ cd sorolens
 
 ### 2. Install the prerequisites (~5 min)
 
-You need Go 1.23, Node 22, pnpm 9, and a running Docker daemon. Exact versions and install links are in [Prerequisite versions](#prerequisite-versions); the short check:
+You need Go 1.26, Node 22, pnpm 9, and a running Docker daemon. Exact versions and install links are in [Prerequisite versions](#prerequisite-versions); the short check:
 
 ```bash
-go version       # go1.23.x
+go version       # go1.26.x
 node --version   # v22.x.x
 pnpm --version   # 9.x.x
 docker info      # daemon must be running
@@ -123,7 +123,7 @@ See also: [MAINTAINER.md](MAINTAINER.md) for maintainer responsibilities and pro
 
 | Tool                 | Required version | Install                                  |
 | -------------------- | ---------------- | ---------------------------------------- |
-| Go                   | 1.23.x           | https://go.dev/dl/                       |
+| Go                   | 1.26.x           | https://go.dev/dl/                       |
 | Node                 | 22.x             | https://nodejs.org/ or `nvm install 22`  |
 | pnpm                 | 9.x              | `npm install -g pnpm@9`                  |
 | Rust                 | stable (latest)  | `rustup install stable`                  |
@@ -132,7 +132,7 @@ See also: [MAINTAINER.md](MAINTAINER.md) for maintainer responsibilities and pro
 | Check your versions: |
 
 ```bash
-go version          # go1.23.x
+go version          # go1.26.x
 node --version      # v22.x.x
 pnpm --version      # 9.x.x
 rustc --version     # rustc 1.xx.x (stable)
@@ -207,7 +207,7 @@ pnpm test    # runs vitest
 
 ```bash
 cd cli
-go build -o sorolens ./cmd/sorolens
+go build -o sorolens .
 ./sorolens --help
 ```
 
